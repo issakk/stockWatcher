@@ -1,0 +1,15 @@
+# 股票指数监视器配置文件 - 测试版本
+
+# 股票配置
+stock:
+  code: "sh000001"        # 上证指数代码
+  name: "上证指数"        # 股票名称
+  threshold: 2.0          # 波动阈值(百分比)，2.0表示2%（测试用较高阈值便于触发通知）
+
+# 企业微信机器人配置 - 测试URL（不会实际发送）
+wechat:
+  webhook_url: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=test"
+
+# 监视器配置
+monitor:
+  interval: 10s          # 检查间隔，测试用较短间隔
